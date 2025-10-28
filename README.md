@@ -1,68 +1,108 @@
-<h1 align="center">🟦 Jeu de Taquin en C</h1>
+# Taquin / Sliding puzzle
 
-<p align="center">
-  🇫🇷 Un jeu de Taquin développé en C avec la bibliothèque graphique de l’IUT de Fontainebleau.<br>
-  🇺🇸 A sliding puzzle game (Taquin) developed in C using the graphical library from IUT Fontainebleau.
-</p>
+## 🇫🇷 Version française
 
----
+### Description
 
-## 🇫🇷 Description
+Ce projet est une **implémentation du jeu de Taquin** en langage **C**, utilisant la **bibliothèque graphique de l’IUT de Fontainebleau** (`libgraph`).  
+Le joueur doit **reconstituer une image** découpée en plusieurs morceaux en **déplaçant la case vide** pour intervertir sa position avec celle d’une tuile adjacente.
 
-Ce projet a été réalisé dans le cadre de la **1ʳᵉ année de BUT Informatique**.  
-Il s’agit d’un **jeu de Taquin** classique : l’objectif est de reconstituer une image ou une séquence de chiffres en déplaçant les cases vides dans la bonne position.
+Le projet a été développé dans le cadre du **BUT Informatique (1ʳᵉ année)** afin de pratiquer la **programmation événementielle en C**, la **gestion des structures de données**, et la **manipulation graphique** via la bibliothèque `libgraph`.
 
-Le projet utilise la **bibliothèque graphique de l’IUT** ([documentation](https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php)) pour afficher le plateau et gérer les interactions avec l’utilisateur.
+### Fonctionnalités 
 
----
+- Affichage graphique avec `libgraph`  
+- Choix dynamique de l'image et du niveau de difficulté (taille de la grille)
+- Mélange automatique des tuiles
+- Détection automatique de la victoire
+- Compteurs de coups joués
 
-## 🇺🇸 Description
+### Technologies
 
-This project was developed during the **first year of the Computer Science BUT program**.  
-It is a classic **sliding puzzle game (Taquin)**: the goal is to reorder a sequence of tiles or an image by sliding the empty space until the puzzle is solved.
+- **Langage C** – logique du jeu et gestion des événements  
+- **libgraph** – affichage graphique et gestion des entrées clavier  
+- **Makefile** – automatisation de la compilation et de l’exécution  
 
-The project uses the **IUT graphical library** ([documentation](https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php)) to display the board and handle user interactions.
+### Compilation & exécution
 
----
+#### Pré-requis
+Assurez-vous que la **bibliothèque `libgraph`** de l’IUT est installée et accessible.  
+Documentation : [https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php](https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php)
 
-## 🎮 Fonctionnalités / Features
+#### Compilation  
+Dans un terminal, exécuter :
+```bash
+make
+```
+Lancement du jeu :
+```bash
+./taquin
+```
 
-- 🔹 Plateau de Taquin affiché graphiquement  
-- 🔹 Déplacement des cases avec la souris ou le clavier  
-- 🔹 Détection automatique de la victoire  
-- 🔹 Affichage d’un message de victoire lorsqu’on termine le puzzle  
 
----
+### Contrôles
 
-## ⚙️ Technologies
+- **Souris** : choix des paramètres
+- **Flèches** ↑ / ↓ / ← / → : déplacer la case vide
 
-- **C (ANSI)** – langage principal  
-- **Bibliothèque graphique de l’IUT** – affichage et interactions  
-- **Makefile** – compilation simplifiée  
+### Auteurs 
 
----
+Projet réalisé par 
+- **Kayyissa Haïssous**  
+- **Claire Gobert**  
 
-## 🚀 Compilation et exécution / Build & Run
-
-1. Assurez-vous que la **bibliothèque graphique de l’IUT** est installée et accessible.  
-2. Compilez le projet avec le `Makefile` fourni :
-   ```bash
-   make
-   ```
-3. Lancez le jeu :
-  ```bash
-   ./taquin
-   ```
-4. Jouez au Taquin et essayez de résoudre le puzzle !
+Dans le cadre du BUT Informatique – 1ʳᵉ année (2021-2022)
 
 ---
 
-## 👨‍💻 Auteurs / Authors
+## 🇬🇧 English version
 
-Projet réalisé par / Project made by :
+### Description
 
-- Kayyissa Haïssous
-- Claire Gobert
+This project is an implementation of the **Sliding Puzzle game** written in **C**, using the **Fontainebleau IUT graphical library** (`libgraph`).  
+The player must **reconstruct an image** that has been divided into several tiles by **moving the empty square** to swap its position with an adjacent tile.
 
-Dans le cadre du BUT Informatique – 1ʳᵉ année (2024‑2025)
-As part of the Computer Science BUT – 1st year (2024‑2025
+The project was developed as part of the **first year of the Computer Science BUT** to practise **event-driven programming in C**, **data structure management**, and **graphical manipulation** using the `libgraph` library.
+
+### Features
+
+- Graphical display using `libgraph`  
+- Dynamic image and difficulty selection (grid size)  
+- Automatic shuffling of tiles  
+- Automatic victory detection  
+- Move counter  
+
+### Technologies
+
+- **C language** – game logic and event handling  
+- **libgraph** – graphical rendering and keyboard/mouse input handling  
+- **Makefile** – build and execution automation  
+
+### Installation & Compilation
+
+#### Requirements
+Make sure the **`libgraph`** library from the IUT of Fontainebleau is installed and accessible.  
+Documentation: [https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php](https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/index.php)
+
+#### Compilation  
+In a terminal, run:
+```bash
+make
+```
+Then start the game with:
+```bash
+./taquin
+```
+
+### Controls
+
+- **Mouse**: select game parameters  
+- **Arrow keys** ↑ / ↓ / ← / → : move the empty tile
+
+### Authors
+
+Project developed by
+- **Kayyissa Haïssous**
+- **Claire Gobert**
+
+As part of the Computer Science BUT - 1st year (2021-2022)
